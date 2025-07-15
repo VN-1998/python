@@ -11,6 +11,3 @@ This folder contains the `marks.py` file which is used to perform operations rel
 
 Make sure you have Python installed.
 
-To run the script:
-```bash
-python marks.py
