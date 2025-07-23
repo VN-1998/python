@@ -1,0 +1,26 @@
+class emp:
+    profit = 1000000
+    company = "Cognizant"
+    tax = 0
+    def __init__(self,sal,name,age,per):
+        self.name = name
+        self.sal = sal
+        self.name = name
+        self.age = age
+        self.per = per
+    def cal_tax(self):
+        return((emp.tax/100)*self.sal)
+    def share(self):
+        return((self.per/100)*emp.profit)
+    def display(self):
+        print("1.",self.name)
+        print("2.",emp.company)
+        print("3.",self.age)
+        print("4.",self.sal)
+        print("5.",self.share())
+        print("6.",self.cal_tax())
+a1=emp(1000,"ash",22,5)
+a2=emp(2000,"har",21,6)
+a1.display()
+print("-----------")
+a2.display()

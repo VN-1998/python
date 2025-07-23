@@ -1,0 +1,40 @@
+def circle():
+    r = int(input("ente rth radius "))
+    print("Area of the circle is",3.14*r*r)
+
+def square(a):
+    print("area of square is ",a*a)
+    
+def triangle():
+    b = int(input("enter the legth of the triangle:"))
+    h = int(input("enter the height of the triangle:"))
+    print("area of the triangle:",0.5*b*h)
+    
+def rect(a,b):
+    return a*b
+
+while(True):
+    print("1.Circle")
+    print("2.Square")
+    print("3.Triangle")
+    print("4.Rectangle")
+    print("5.exit")
+    ch = int(input("Enter your choice:"))
+    match ch:
+        case 1 : circle()
+        case 2 : 
+            a = int(input("ente rthe side of the square"))
+            square(a)
+        case 3: 
+            res =triangle()
+            print('area of tri',res)
+        case 4:
+            a = int(input("enter the lengith of the rect:"))
+            b = int(input("enter the brradth of the rect:"))
+            res = rect(a,b)
+            print("area of rectangle is:",res)
+        case 5:
+            print("you are out of the loop")
+            exit(0)
+        case _:
+            print("invalid option")

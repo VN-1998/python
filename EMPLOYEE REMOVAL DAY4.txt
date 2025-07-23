@@ -1,0 +1,15 @@
+names = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+memo = [0, 1, 1, 1, 2, 2, 1, 2, 1, 2]
+salary = [1000, 2000, 3000, 4500, 2000, 5000, 1500, 2300, 1300, 1100]
+res = list(zip(names, memo, salary))
+remaining = [i for i in res if i[2] <= 4000]
+sorted_emp = sorted(remaining, key=lambda x: x[2], reverse=True)
+list2 = []
+for i in sorted_emp:
+    if i[1] >= 2:
+        list2.append(i)
+    if len(list2) >= 3:
+        break
+final = list2
+for index, i in enumerate(final):
+    print("{}. {}: Memo {} | Salary {}".format(index + 1, i[0], i[1], i[2]))

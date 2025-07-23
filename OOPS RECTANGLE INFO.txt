@@ -1,0 +1,26 @@
+class Rectangle:
+    def about(self):
+        print("Rectangle Info:")
+        print("1) The perimeter of a rectangle is 2a + 2b")
+        print("2) The area of a rectangle is a * b")
+
+    def get_input(self):
+        self.length = int(input("Enter the length of the rectangle: "))
+        self.breadth = int(input("Enter the breadth of the rectangle: "))
+
+    def perimeter(self):
+        self.peri = 2 * (self.length + self.breadth)
+
+    def area(self):
+        self.ar = self.length * self.breadth
+
+    def display(self):
+        print("Area of the rectangle is:", self.ar)
+        print("Perimeter of the rectangle is:", self.peri)
+
+s1 = Rectangle()
+s1.about()
+s1.get_input()
+s1.perimeter()
+s1.area()
+s1.display()

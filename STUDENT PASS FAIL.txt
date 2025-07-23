@@ -1,0 +1,28 @@
+class college:
+    col= "NITTE"#ITS A CLASS VARIABLE ITS COMMMON TO ALL STUDENTS
+    def student(self,name,mark):
+        self.name = name
+        self.mark = mark
+    def passfail(self):
+        if(self.mark > 40):
+            print("Clear")
+        else:
+            print("Fail")
+    def modify(self,grace):
+        self.mark=self.mark+grace
+    def display(self):
+        print("Name:",self.name)
+        print("College:",self.col)
+        print("Mark:",self.mark)
+        print("Status:",self.passfail())
+
+s1=college()
+s2=college()
+s1.student("NIKITHA",56)
+s2.student("POOJA",34)
+# s1.passfail()
+# s2.passfail()
+# s1.display()
+# s2.display()
+for i in range (11):
+    print(college.col)
